@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            height: 100vh;
+            margin: 0;
+        }
+
+        form {
+            background-color: #93d6c7;
+            padding: 25px 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            min-width: 320px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .details {
+            display: grid;
+            gap: 12px;
+        }
+
+        .details label,
+        .details b {
+            display: block;
+            font-size: 14px;
+        }
+
+        .details input[type="text"],
+        .details input[type="email"],
+        .details input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 4px;
+            border-radius: 6px;
+            border: 1px solid #aaa;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 6px;
+
+        }
+       
+
+        button {
+            padding: 8px 14px;
+            margin-top: 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #6aa89a;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <Form class="form">
+        <h2>Registration Form</h2>
+
+        <section class="details">
+            <label>
+                <b>Full Name</b>
+                <input type="text" placeholder="Enter your full name">
+            </label>
+
+            <label>
+                <b>Email</b>
+                <input type="email" placeholder="enteryour@gmail.com">
+            </label>
+
+            <label>
+                <b>Password</b>
+                <input type="password" placeholder="Enter your password">
+            </label>
+
+            <b>Gender</b>
+            <label><input type="radio" name="gender" value="male"> Male</label>
+            <label><input type="radio" name="gender" value="female"> Female</label>
+            <label><input type="radio" name="gender" value="others"> Others</label>
+        </section>
+
+        <b>Hobbies</b>
+        <label><input type="checkbox" name="hobby" value="games"> Games</label>
+
+        <br><br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </Form>
+
+
+</body>
+
+</html>
